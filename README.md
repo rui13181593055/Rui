@@ -1,54 +1,56 @@
 <div align="center">
 
-<img src="./assets/profile-banner.svg" alt="Research tooling and local AI systems banner" width="100%" />
+<img src="./assets/profile-banner.svg" alt="Rui Workbench banner" width="100%" />
 
-# Rui
+# Rui Workbench
 
-**Research tooling, local AI systems, and practical automation.**
+**A local-first research and automation workspace for papers, code, media, and AI-assisted workflows.**
 
-I build small but serious tools that turn scattered ideas, papers, code, and media into usable workflows.
-
-[![ResearchFlow](https://img.shields.io/badge/ResearchFlow-local%20research%20OS-2f6f6f?style=for-the-badge)](https://github.com/RipeMangoBox/ResearchFlow)
-[![Codex](https://img.shields.io/badge/Codex-workflow%20automation-111827?style=for-the-badge)](#)
-[![Python](https://img.shields.io/badge/Python-Anaconda-44a833?style=for-the-badge&logo=anaconda&logoColor=white)](#)
-[![Zotero](https://img.shields.io/badge/Zotero-research%20library-CC2936?style=for-the-badge&logo=zotero&logoColor=white)](#)
+[![Repository](https://img.shields.io/badge/repo-rui4399%2FRui-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rui4399/Rui)
+[![ResearchFlow](https://img.shields.io/badge/ResearchFlow-research%20engine-0f766e?style=for-the-badge)](https://github.com/RipeMangoBox/ResearchFlow)
+[![Anaconda](https://img.shields.io/badge/Python-Anaconda-44a833?style=for-the-badge&logo=anaconda&logoColor=white)](#stack)
+[![Codex](https://img.shields.io/badge/Codex-local%20skills-1f2937?style=for-the-badge)](#system-map)
 
 </div>
 
 ---
 
-## Focus
+## Overview
 
-I am interested in systems that help a person think, research, write, and ship faster without losing their own taste.
+Rui Workbench is a personal landing repository for the local systems I am building: research collection, paper indexing, Codex skills, reproducible Python environments, Zotero workflows, and media tooling.
 
-| Area | What I am building |
-| --- | --- |
-| Research systems | Paper collection, metadata audit, local indexing, and knowledge-base queries |
-| Local AI runtime | Codex skills, persistent memory, browser/workspace automation, and project routing |
-| Python environment | Anaconda-first setup, isolated envs, clean caches, and reproducible tooling |
-| Media tooling | yt-dlp source workflow, structured downloads, and metadata pipelines |
+The goal is simple: turn scattered inputs into reusable workflows that are easy to resume, inspect, and improve.
+
+## Highlights
+
+| Layer | What it does | Current direction |
+| --- | --- | --- |
+| ResearchFlow | Collects, indexes, audits, and queries research papers | Local knowledge base for papers and notes |
+| Codex skills | Routes tasks into repeatable agent workflows | Project-specific skills, memory, and automation |
+| Anaconda runtime | Keeps Python tools isolated and recoverable | Clean envs for research, yt-dlp, and data tools |
+| Media pipeline | Extracts and organizes web/media metadata | yt-dlp source workspace and structured downloads |
 
 ## Featured Work
 
-| Project | Direction |
+| Project | Why it matters |
 | --- | --- |
-| [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | Local research assistant for papers, notes, indexing, and reusable research skills |
-| yt-dlp local workspace | Source-linked media tooling, installed in an isolated Anaconda environment |
-| Codex skill system | Local skill routing, memory files, and project-specific agent workflows |
+| [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
+| `yt-dlp` local workspace | Editable source-linked media tooling in an isolated Anaconda environment |
+| Codex skill library | A growing set of local skills for documents, Zotero, GitHub, life-science research, and automation |
 
 ## System Map
 
-```text
-papers / web / media
-        |
-        v
-ResearchFlow  ->  indexed notes  ->  knowledge queries
-        |                                |
-        v                                v
-Codex skills  ->  local automation  ->  reusable tools
+```mermaid
+flowchart LR
+    A["Papers, web pages, media"] --> B["ResearchFlow"]
+    B --> C["Indexes and notes"]
+    C --> D["Knowledge queries"]
+    D --> E["Drafts, code, reports"]
+    E --> F["Codex skills"]
+    F --> G["Reusable workflows"]
 ```
 
-## Tooling I Like
+## Stack
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
@@ -60,21 +62,28 @@ Codex skills  ->  local automation  ->  reusable tools
   <img src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />
 </p>
 
-## Working Style
+## Principles
 
-- Local-first when possible.
-- Prefer tools that leave clear files, logs, and checkpoints.
-- Make automation useful before making it fancy.
-- Treat research notes and code as parts of the same thinking system.
-- Keep environments boring, explicit, and recoverable.
+- Local-first by default.
+- Clear files, logs, checkpoints, and recovery paths.
+- Automation that helps before it tries to impress.
+- Research notes and code treated as one thinking system.
+- Environments kept boring, explicit, and portable.
+
+## Roadmap
+
+- [ ] Turn ResearchFlow outputs into cleaner shareable reports.
+- [ ] Add repeatable paper collection and metadata QA recipes.
+- [ ] Build a small media metadata workflow around yt-dlp.
+- [ ] Publish more local Codex skills as reusable templates.
 
 ## GitHub Snapshot
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=rui13181593055&show_icons=true&hide_border=true&theme=default)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=rui4399&show_icons=true&hide_border=true&theme=default)
 
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rui13181593055&layout=compact&hide_border=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rui4399&layout=compact&hide_border=true)
 
 </div>
 
