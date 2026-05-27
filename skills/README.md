@@ -1,8 +1,10 @@
-# GitHub-Ready Skill Drafts
+# Codex Skill Lab
 
-These skill drafts are adapted from local Codex skills plus maintenance and work logs. They are written as public, reusable skills rather than personal runbooks.
+This directory contains public Codex skill drafts distilled from local agent maintenance work. The skills focus on reliability problems that usually do not show up in clean API examples: mixed Windows/WSL execution, stale bridge state, media delivery failures, plugin visibility in API-key mode, local memory hygiene, and recovery from noisy toolchain drift.
 
-## Included Skills
+They are written as reusable agent procedures. Each skill tells a future assistant when to use it, what evidence to inspect, what mistakes to avoid, and what counts as completion.
+
+## Skills
 
 - `windows-agent-interop-health`: diagnose Windows, WSL, and local agent boundary failures with executable health checks.
 - `chat-media-delivery-runbook`: debug chat-platform media delivery by separating generation, upload, send, and context-refresh stages.
@@ -11,21 +13,25 @@ These skill drafts are adapted from local Codex skills plus maintenance and work
 - `codex-identity-portability`: migrate local Codex identity assets without copying secrets or active account state.
 - `windows-ai-devtool-repair`: repair Windows AI development toolchains when Python, Node, PowerShell, WSL, or local proxies drift.
 
-## Public-Release Notes
+## Why These Are Different
 
-These drafts intentionally avoid:
+Most skills explain a clean happy path. These focus on operational edge cases:
 
-- user names, machine-specific absolute paths, and private workspace names
-- API keys, account tokens, cookies, auth files, and model-provider secrets
-- private chat/persona details
-- exact proprietary APK contents or copied code
+- a lock file exists but the process is dead
+- upload succeeds but final chat delivery fails
+- `wsl.exe` resolves through the wrong Windows view
+- a local proxy returns HTTP 200 with HTML instead of model JSON
+- a diagnostic command silently rewrites configuration
+- a shell profile emits unrelated Python errors after successful commands
 
-They keep the reusable engineering lessons:
+The intended user is an agent or developer maintaining local AI workflows where correctness depends on logs, state, process ownership, and explicit verification.
 
-- verify real process state instead of trusting stale locks
-- separate upload success from final message delivery
-- use Windows PowerShell 5.1-safe encodings for maintenance scripts
-- treat `wsl.exe` resolution as a diagnostic surface
-- keep local memory promotion conservative and file-backed
-- ask before credentials, spending credits, posting externally, or changing live services
+## Public Safety
 
+These drafts intentionally exclude user names, machine-specific absolute paths, private workspace names, API keys, account tokens, cookies, auth files, provider secrets, private chat details, and copied proprietary code.
+
+## Usage
+
+Copy a skill folder into a Codex-compatible skills directory, or read the relevant `SKILL.md` directly when doing a similar repair. Adapt placeholder paths and commands to the target machine before running any operation.
+
+Ask before using credentials, spending credits, posting externally, sending messages, or changing live services.

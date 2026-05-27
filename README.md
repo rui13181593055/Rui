@@ -4,7 +4,7 @@
 
 # Rui Workbench
 
-**A local-first research and automation workspace for papers, code, media, and AI-assisted workflows.**
+**Local-first agent systems, Codex skills, recovery runbooks, and automation workflows.**
 
 [![Repository](https://img.shields.io/badge/repo-rui4399%2FRui-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rui4399/Rui)
 [![ResearchFlow](https://img.shields.io/badge/ResearchFlow-research%20engine-0f766e?style=for-the-badge)](https://github.com/RipeMangoBox/ResearchFlow)
@@ -17,16 +17,17 @@
 
 ## Overview
 
-Rui Workbench is a personal landing repository for the local systems I am building: research collection, paper indexing, Codex skills, reproducible Python environments, Zotero workflows, and media tooling.
+Rui Workbench is a public index for the local agent systems I build and maintain: Codex skills, Windows/WSL repair workflows, media delivery runbooks, reproducible Python environments, and research tooling.
 
-The goal is simple: turn scattered inputs into reusable workflows that are easy to resume, inspect, and improve.
+The goal is to turn hard-won local engineering experience into reusable, inspectable workflows. The emphasis is not on generic API wrappers, but on the operational details that make AI-assisted work reliable on a real machine: logs, state files, recovery paths, portability, and verification.
 
 ## Highlights
 
 | Layer | What it does | Current direction |
 | --- | --- | --- |
 | ResearchFlow | Collects, indexes, audits, and queries research papers | Local knowledge base for papers and notes |
-| Codex skills | Routes tasks into repeatable agent workflows | Project-specific skills, memory, and automation |
+| Codex skills | Turns repeated agent work into reusable procedures | Public skill drafts and private local automation |
+| Recovery runbooks | Captures Windows, WSL, media, and tooling failure modes | Practical repair paths backed by logs and checks |
 | Anaconda runtime | Keeps Python tools isolated and recoverable | Clean envs for research, yt-dlp, and data tools |
 | Media pipeline | Extracts and organizes web/media metadata | yt-dlp source workspace and structured downloads |
 
@@ -34,21 +35,20 @@ The goal is simple: turn scattered inputs into reusable workflows that are easy 
 
 | Project | Why it matters |
 | --- | --- |
+| [Codex skill drafts](./skills) | Public agent skills for local reliability, plugin recovery, media delivery, memory, portability, and Windows repair |
 | [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
 | `yt-dlp` local workspace | Editable source-linked media tooling in an isolated Anaconda environment |
-| [Codex skill drafts](./skills) | Public, reusable agent runbooks distilled from local Codex, Windows, WSL, media, and recovery work |
 | Codex skill library | A growing set of local skills for documents, Zotero, GitHub, life-science research, and automation |
 
 ## System Map
 
 ```mermaid
 flowchart LR
-    A["Papers, web pages, media"] --> B["ResearchFlow"]
-    B --> C["Indexes and notes"]
-    C --> D["Knowledge queries"]
-    D --> E["Drafts, code, reports"]
-    E --> F["Codex skills"]
-    F --> G["Reusable workflows"]
+    A["Local work: code, papers, media, tools"] --> B["Logs and state"]
+    B --> C["Repeatable fixes"]
+    C --> D["Codex skills"]
+    D --> E["Reusable runbooks"]
+    E --> F["Automation and reports"]
 ```
 
 ## Stack
@@ -76,7 +76,7 @@ flowchart LR
 - [ ] Turn ResearchFlow outputs into cleaner shareable reports.
 - [ ] Add repeatable paper collection and metadata QA recipes.
 - [ ] Build a small media metadata workflow around yt-dlp.
-- [ ] Publish more local Codex skills as reusable templates.
+- [ ] Expand the public skills into tested templates with small helper scripts.
 
 ## GitHub Snapshot
 
@@ -92,6 +92,6 @@ flowchart LR
 
 <div align="center">
 
-**Building a calmer, sharper local research and automation stack.**
+**Building local agent workflows that survive real machines, real logs, and real failure modes.**
 
 </div>

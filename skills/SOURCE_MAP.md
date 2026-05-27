@@ -1,6 +1,6 @@
-# Source Map
+# Design Notes
 
-This file records how the public drafts relate to the local skill and maintenance work that inspired them. It avoids private paths and sensitive details.
+This file explains the engineering background behind the public skill drafts. It is not a private log dump; it records the reusable patterns that were extracted from local maintenance work while avoiding private paths, credentials, and sensitive details.
 
 ## windows-agent-interop-health
 
@@ -90,4 +90,3 @@ Distinctive angle:
 - handles noisy Windows AI toolchains as layered systems
 - distinguishes shell noise from command failure
 - includes concrete anti-patterns from real repair sessions
-
