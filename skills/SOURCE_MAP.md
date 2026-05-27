@@ -90,3 +90,104 @@ Distinctive angle:
 - handles noisy Windows AI toolchains as layered systems
 - distinguishes shell noise from command failure
 - includes concrete anti-patterns from real repair sessions
+
+## codex-desktop-runtime-maintenance
+
+Inspired by:
+
+- local Codex runtime repair work
+- Codex++ safe-mode and tweak-loading diagnostics
+- sandbox setup refresh failures
+- corrupt logs database repair planning
+- local proxy and provider-health false positives
+
+Distinctive angle:
+
+- treats desktop runtime, CLI, plugins, sandbox, databases, MCP, and provider proxy as separate layers
+- distinguishes UI reload, hot-load, and full restart
+- emphasizes readonly checks and backups before mutation
+
+## hermes-gateway-recovery
+
+Inspired by:
+
+- Hermes/WSL gateway and QQBot repair sessions
+- gateway state files with dead PIDs
+- empty response failures from provider/session/fallback state
+- WSL-to-Windows CC Switch bridge design
+
+Distinctive angle:
+
+- requires PID, port, session, provider, and response-body evidence
+- treats empty output with exit code 0 as failure
+- separates bridge restart, gateway restart, and session reset
+
+## mobile-agent-session-bridge
+
+Inspired by:
+
+- Happy mobile to local Codex bridge debugging
+- broken global npm dependency repair
+- websocket timeout diagnosis
+- stale session and turn-start-without-final-reply cases
+
+Distinctive angle:
+
+- separates mobile reachability, daemon control plane, local app-server, and turn completion
+- defines healthy markers and failure markers for session bridges
+- avoids reusing stale session ids after cleanup
+
+## mcp-oauth-session-freshness
+
+Inspired by:
+
+- Notion MCP OAuth setup and stale active-session failures
+- long Notion write fallback into local drafts
+- child-page split and parent-page block preservation
+
+Distinctive angle:
+
+- separates config correctness, CLI OAuth login, active desktop auth freshness, and tool visibility
+- requires read-only current-session verification before writes
+- saves pending writes locally when auth is stale
+
+## evidence-first-local-ops
+
+Inspired by:
+
+- recurring false positives from UI status, lock files, green health checks, and provider names
+- repeated need to prove current state from logs, process state, ports, and probes
+
+Distinctive angle:
+
+- turns a local debugging philosophy into an executable agent workflow
+- ranks evidence sources explicitly
+- requires conclusions to point to falsifiable evidence
+
+## state-layered-agent-design
+
+Inspired by:
+
+- Codex memory files, local skills, plugin caches, session stores, media artifacts, auth stores, and shared records
+- account migration and non-secret record sharing work
+- bridge state and capability registry patterns
+
+Distinctive angle:
+
+- separates identity, lessons, active rules, sessions, runtime, tools, credentials, artifacts, and external side effects
+- gives each layer a distinct repair and migration policy
+- prevents common overbroad fixes such as deleting auth for a log corruption
+
+## failure-to-runbook-loop
+
+Inspired by:
+
+- repeated maintenance learnings promoted into memory
+- bridge maintenance scripts created from recurring failures
+- public skills distilled from local work logs
+
+Distinctive angle:
+
+- defines when a failure should become a note, error entry, script, runbook, skill, or active rule
+- makes "next occurrence is cheaper to diagnose" the completion standard
+- separates durable lessons from private raw logs

@@ -35,7 +35,7 @@ The goal is to turn hard-won local engineering experience into reusable, inspect
 
 | Project | Why it matters |
 | --- | --- |
-| [Codex skill drafts](./skills) | Public agent skills for local reliability, plugin recovery, media delivery, memory, portability, and Windows repair |
+| [Codex skill drafts](./skills) | Public agent skills for local reliability, plugin recovery, media delivery, memory, portability, Windows repair, and operating philosophy |
 | [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
 | `yt-dlp` local workspace | Editable source-linked media tooling in an isolated Anaconda environment |
 | Codex skill library | A growing set of local skills for documents, Zotero, GitHub, life-science research, and automation |

@@ -6,12 +6,24 @@ They are written as reusable agent procedures. Each skill tells a future assista
 
 ## Skills
 
+### Operational Runbooks
+
 - `windows-agent-interop-health`: diagnose Windows, WSL, and local agent boundary failures with executable health checks.
 - `chat-media-delivery-runbook`: debug chat-platform media delivery by separating generation, upload, send, and context-refresh stages.
 - `local-agent-memory-loop`: maintain explicit local memory files for agent preferences, lessons, active rules, and promotion.
 - `codex-plugin-recovery-api-mode`: recover local plugin/skill routing when a Codex-style app is running in API-key mode or the UI does not expose plugins.
 - `codex-identity-portability`: migrate local Codex identity assets without copying secrets or active account state.
 - `windows-ai-devtool-repair`: repair Windows AI development toolchains when Python, Node, PowerShell, WSL, or local proxies drift.
+- `codex-desktop-runtime-maintenance`: maintain a Codex-style desktop runtime across CLI, sandbox, plugin, database, proxy, and UI extension layers.
+- `hermes-gateway-recovery`: recover Hermes-style WSL gateways, bot connectors, fallback providers, proxy bridges, and stale sessions.
+- `mobile-agent-session-bridge`: diagnose mobile/web control surfaces connected to local coding agents when sessions are online but turns stall.
+- `mcp-oauth-session-freshness`: handle OAuth-backed MCP tools when CLI login succeeds but the active desktop session still has stale auth.
+
+### Operating Philosophy
+
+- `evidence-first-local-ops`: debug by ranking logs, process state, probes, config, UI status, and prior assumptions as evidence.
+- `state-layered-agent-design`: design agent systems with separate layers for memory, sessions, runtime, tools, credentials, artifacts, and external state.
+- `failure-to-runbook-loop`: convert repeated failures into memory entries, scripts, runbooks, or skills with explicit verification.
 
 ## Why These Are Different
 
@@ -23,6 +35,9 @@ Most skills explain a clean happy path. These focus on operational edge cases:
 - a local proxy returns HTTP 200 with HTML instead of model JSON
 - a diagnostic command silently rewrites configuration
 - a shell profile emits unrelated Python errors after successful commands
+- a gateway state file says running while the PID is dead
+- CLI OAuth succeeds but the active desktop session still cannot use the MCP tool
+- a mobile session receives the message but the local agent never emits a final reply
 
 The intended user is an agent or developer maintaining local AI workflows where correctness depends on logs, state, process ownership, and explicit verification.
 
