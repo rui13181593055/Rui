@@ -36,6 +36,7 @@ The goal is simple: turn scattered inputs into reusable workflows that are easy 
 | --- | --- |
 | [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
 | `yt-dlp` local workspace | Editable source-linked media tooling in an isolated Anaconda environment |
+| [Codex skill drafts](./skills) | Public, reusable agent runbooks distilled from local Codex, Windows, WSL, media, and recovery work |
 | Codex skill library | A growing set of local skills for documents, Zotero, GitHub, life-science research, and automation |
 
 ## System Map
