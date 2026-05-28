@@ -191,3 +191,191 @@ Distinctive angle:
 - defines when a failure should become a note, error entry, script, runbook, skill, or active rule
 - makes "next occurrence is cheaper to diagnose" the completion standard
 - separates durable lessons from private raw logs
+
+## provider-response-shape-probing
+
+Inspired by:
+
+- local proxy checks where `/v1/models` failed but real requests worked
+- provider responses that returned HTTP 200 with HTML instead of API JSON
+- image provider routes that rewrote prompts instead of returning artifacts
+- Hermes empty-output incidents with successful process exits
+
+Distinctive angle:
+
+- treats response shape as health evidence
+- separates status code, JSON parseability, output fields, and caller usability
+- avoids trusting provider names or catalog entries as capability proof
+
+## windows-shell-encoding-hygiene
+
+Inspired by:
+
+- PowerShell 5.1 misreading UTF-8 maintenance scripts
+- Python and pip Unicode failures in Windows consoles
+- pytest global plugin pollution
+- shell profile noise that appeared after successful commands
+
+Distinctive angle:
+
+- distinguishes shell failure from target command failure
+- makes encoding and interpreter choice part of verification
+- captures when project tests should isolate themselves from global plugins
+
+## codex-config-drift-recovery
+
+Inspired by:
+
+- Codex config being reduced after diagnostic/plugin commands
+- provider, plugin, MCP, memory, and sandbox sections needing restoration
+- generated config blocks that should not be overwritten casually
+
+Distinctive angle:
+
+- diagnoses config drift by section
+- requires current snapshot and known-good baseline before repair
+- prefers non-mutating verification after restoration
+
+## codexplusplus-tweak-lifecycle
+
+Inspired by:
+
+- Codex++ safe mode disabling local tweaks
+- renderer preload and settings injection compatibility failures
+- tweak discovery logs showing installed tweaks without visible UI behavior
+- local plugin/skills entry work for API-key mode
+
+Distinctive angle:
+
+- models tweak health as lifecycle layers
+- separates install, discovery, preload, renderer injection, and visible UI
+- avoids treating invisible UI as proof that the whole runtime failed
+
+## bridge-endpoint-liveness-triage
+
+Inspired by:
+
+- WeChat/Codex bridge endpoint reporting idle while inbound files stopped changing
+- stale lock files and endpoint files
+- maintenance loops that were alive while their target bridge was stale
+- mobile/web sessions that connected but never completed turns
+
+Distinctive angle:
+
+- distinguishes readiness from liveness
+- uses fresh movement through logs, queues, sessions, and outbound events
+- scopes restarts to the stale layer when possible
+
+## chat-empty-turn-recovery
+
+Inspired by:
+
+- Codex turns that emitted `task_complete` without assistant text
+- Hermes oneshot/gateway empty response cases
+- provider/session failures that exited successfully but produced no content
+
+Distinctive angle:
+
+- treats silent completion as delivery failure
+- separates model output absence from transport failure
+- defines when to send a user-facing fallback without claiming success
+
+## media-artifact-integrity-check
+
+Inspired by:
+
+- generated image fallback files whose names did not match their visible content
+- cached or rejected media accidentally reused for chat sends
+- media upload success being mistaken for final delivery
+
+Distinctive angle:
+
+- ranks direct preview above filenames and prior send logs
+- requires checking artifact content before reuse
+- separates source, transformed, uploaded, and final-delivered media
+
+## capability-registry-maintenance
+
+Inspired by:
+
+- local bridge capability reports needing to reflect implemented features
+- virtual companion and media-expression state layers
+- maintenance scripts that validate capabilities by machine-readable fields
+
+Distinctive angle:
+
+- makes capability registration part of feature completion
+- distinguishes feature existence from last verification
+- keeps user-facing status separate from raw technical errors
+
+## local-model-routing-evaluation
+
+Inspired by:
+
+- CC Switch model probes across text, image, and fallback providers
+- model aliases that included unusable or wrong-surface providers
+- quota, timeout, HTML-wrapper, and surface-mismatch failures
+
+Distinctive angle:
+
+- classifies models by task-shaped probes
+- records failure category instead of only pass/fail
+- separates primary, fallback, and do-not-use routes
+
+## public-skill-distillation
+
+Inspired by:
+
+- turning local Codex/Hermes/Codex++ maintenance logs into public GitHub skills
+- repeated need to preserve methods while removing private state
+- user request for skills that reflect both work records and operating philosophy
+
+Distinctive angle:
+
+- publishes judgment, evidence paths, and verification standards instead of raw incidents
+- gives a workflow for converting private records into public skill drafts
+- explicitly separates reusable knowledge from secrets, paths, and private chats
+
+## external-write-draft-fallback
+
+Inspired by:
+
+- Notion MCP OAuth freshness failures after CLI login succeeded
+- preserving local drafts when current desktop tools could not write remotely
+- remote page update rules that can reject destructive replacement
+- chat delivery requests where send can fail after content generation
+
+Distinctive angle:
+
+- treats local drafts as part of reliable remote writes
+- requires read-only current-session checks before mutation
+- records retry conditions and verification requirements
+
+## cross-runtime-path-resolution
+
+Inspired by:
+
+- WSL path resolution from Windows desktop processes
+- `Sysnative` vs `System32` WSL lookup differences
+- npm shims, Python launchers, sandbox helpers, and app-server child processes
+- commands that worked interactively but failed from bridge/runtime callers
+
+Distinctive angle:
+
+- resolves executables from the final caller's runtime
+- names filesystem-view boundaries explicitly
+- avoids copying paths across Windows, WSL, Node, Python, and PowerShell without conversion
+
+## agent-publication-readiness-review
+
+Inspired by:
+
+- public GitHub README refinement after skill drafts were added
+- validation and sensitive-scan checks before push
+- turning a list of skills into a coherent public portfolio section
+
+Distinctive angle:
+
+- reviews taxonomy, trigger clarity, distinctiveness, verification, safety, and polish
+- treats public skill collections as systems, not dumps
+- makes validation and sensitive scanning explicit pre-push requirements
