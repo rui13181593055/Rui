@@ -1,9 +1,8 @@
 <svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Rui Skills banner</title>
-  <desc id="desc">A polished banner for an open AI agent skill platform with registry, runtime, validation, workflows, and evaluations.</desc>
+  <title id="title">Rui Workbench banner</title>
+  <desc id="desc">A polished banner for an open agent skill platform with registry, runtime, validation, workflows, and evaluations.</desc>
   <rect width="1280" height="420" rx="28" fill="#08111F"/>
   <rect x="0.5" y="0.5" width="1279" height="419" rx="27.5" stroke="#243449"/>
-
   <path d="M0 321C88 279 188 260 300 280C412 300 501 346 622 304C743 262 790 176 914 155C1036 134 1147 184 1280 159V420H0V321Z" fill="#0F2A37"/>
   <path d="M0 339C108 288 216 281 331 308C447 335 522 362 639 312C758 261 812 198 924 179C1038 160 1162 203 1280 184" stroke="#22D3EE" stroke-width="2" opacity="0.42"/>
   <path d="M0 360C126 328 246 326 370 346C494 366 595 374 702 322C809 270 885 245 994 254C1104 263 1194 303 1280 291" stroke="#F59E0B" stroke-width="2" opacity="0.3"/>
@@ -24,28 +23,25 @@
   </g>
 
   <g transform="translate(78 70)">
-    <rect x="0" y="0" width="260" height="38" rx="19" fill="#0F766E"/>
-    <text x="22" y="25" fill="#ECFEFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2">OPEN SKILL SYSTEM</text>
-    <text x="0" y="103" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="850">Rui Skills</text>
-    <text x="2" y="148" fill="#D8E2F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">Reusable capabilities for AI research and coding agents.</text>
+    <rect x="0" y="0" width="286" height="38" rx="19" fill="#0F766E"/>
+    <text x="22" y="25" fill="#ECFEFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2">AGENT WORKBENCH</text>
+    <text x="0" y="103" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="850">Rui Workbench</text>
+    <text x="2" y="148" fill="#D8E2F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">Agent capabilities for research, coding, and local automation.</text>
   </g>
 
   <g transform="translate(82 286)">
-    <rect x="0" y="0" width="154" height="52" rx="14" fill="#07101D" stroke="#2DD4BF"/>
-    <text x="22" y="23" fill="#94F5E4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">ACTIVE SKILLS</text>
-    <text x="22" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">28</text>
-
-    <rect x="174" y="0" width="170" height="52" rx="14" fill="#07101D" stroke="#60A5FA"/>
-    <text x="196" y="23" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">REGISTRY</text>
-    <text x="196" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">33 entries</text>
-
-    <rect x="364" y="0" width="164" height="52" rx="14" fill="#07101D" stroke="#C084FC"/>
-    <text x="386" y="23" fill="#E9D5FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">DOMAINS</text>
-    <text x="386" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">21</text>
-
-    <rect x="548" y="0" width="178" height="52" rx="14" fill="#07101D" stroke="#F59E0B"/>
-    <text x="570" y="23" fill="#FDE68A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">VALIDATION</text>
-    <text x="570" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">0 errors</text>
+    <rect x="0" y="0" width="178" height="52" rx="14" fill="#07101D" stroke="#2DD4BF"/>
+    <text x="22" y="23" fill="#94F5E4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">CAPABILITIES</text>
+    <text x="22" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">28 active</text>
+    <rect x="198" y="0" width="170" height="52" rx="14" fill="#07101D" stroke="#60A5FA"/>
+    <text x="220" y="23" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">REGISTRY</text>
+    <text x="220" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">33 entries</text>
+    <rect x="388" y="0" width="164" height="52" rx="14" fill="#07101D" stroke="#C084FC"/>
+    <text x="410" y="23" fill="#E9D5FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">DOMAINS</text>
+    <text x="410" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">21</text>
+    <rect x="572" y="0" width="178" height="52" rx="14" fill="#07101D" stroke="#F59E0B"/>
+    <text x="594" y="23" fill="#FDE68A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">VALIDATION</text>
+    <text x="594" y="42" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="850">0 errors</text>
   </g>
 
   <g transform="translate(820 72)">
@@ -53,10 +49,9 @@
     <circle cx="34" cy="34" r="6" fill="#F87171"/>
     <circle cx="56" cy="34" r="6" fill="#FBBF24"/>
     <circle cx="78" cy="34" r="6" fill="#34D399"/>
-
-    <text x="34" y="79" fill="#67E8F9" font-family="Consolas, monospace" font-size="16">rui skills validate</text>
+    <text x="34" y="79" fill="#67E8F9" font-family="Consolas, monospace" font-size="16">rui validate</text>
     <text x="34" y="116" fill="#E5E7EB" font-family="Consolas, monospace" font-size="16">registry: 33 entries</text>
-    <text x="34" y="146" fill="#E5E7EB" font-family="Consolas, monospace" font-size="16">active skills: 28</text>
+    <text x="34" y="146" fill="#E5E7EB" font-family="Consolas, monospace" font-size="16">active modules: 28</text>
     <text x="34" y="176" fill="#E5E7EB" font-family="Consolas, monospace" font-size="16">tool routing: ready</text>
     <text x="34" y="206" fill="#E5E7EB" font-family="Consolas, monospace" font-size="16">strict schema: tracked</text>
     <text x="34" y="236" fill="#86EFAC" font-family="Consolas, monospace" font-size="16">status: publishable</text>

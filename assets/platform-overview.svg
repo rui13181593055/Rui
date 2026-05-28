@@ -1,0 +1,53 @@
+<svg width="1280" height="520" viewBox="0 0 1280 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Platform overview</title>
+  <desc id="desc">A visual overview of the agent workbench architecture.</desc>
+  <rect width="1280" height="520" rx="24" fill="#0B1220"/>
+  <rect x="36" y="36" width="1208" height="448" rx="22" fill="#0F172A" stroke="#26364D"/>
+  <text x="70" y="86" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="850">Platform Overview</text>
+  <text x="70" y="122" fill="#B8C4D6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">From task intent to verified reusable capability.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0 0L8 3L0 6Z" fill="#38BDF8"/>
+    </marker>
+  </defs>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="74" y="184" width="160" height="100" rx="16" fill="#07101D" stroke="#2DD4BF"/>
+    <text x="102" y="226" fill="#F8FAFC" font-size="22" font-weight="800">Task</text>
+    <text x="102" y="254" fill="#9FEDE4" font-size="14">intent + context</text>
+
+    <rect x="292" y="154" width="180" height="160" rx="16" fill="#07101D" stroke="#60A5FA"/>
+    <text x="324" y="197" fill="#F8FAFC" font-size="22" font-weight="800">Registry</text>
+    <text x="324" y="225" fill="#BBD7FF" font-size="14">metadata</text>
+    <text x="324" y="249" fill="#BBD7FF" font-size="14">tags</text>
+    <text x="324" y="273" fill="#BBD7FF" font-size="14">tools</text>
+
+    <rect x="532" y="154" width="180" height="160" rx="16" fill="#07101D" stroke="#A78BFA"/>
+    <text x="562" y="197" fill="#F8FAFC" font-size="22" font-weight="800">Capability</text>
+    <text x="562" y="225" fill="#DDD6FE" font-size="14">SKILL.md</text>
+    <text x="562" y="249" fill="#DDD6FE" font-size="14">workflow</text>
+    <text x="562" y="273" fill="#DDD6FE" font-size="14">constraints</text>
+
+    <rect x="772" y="154" width="180" height="160" rx="16" fill="#07101D" stroke="#F59E0B"/>
+    <text x="805" y="197" fill="#F8FAFC" font-size="22" font-weight="800">Runtime</text>
+    <text x="805" y="225" fill="#FDE68A" font-size="14">tool routing</text>
+    <text x="805" y="249" fill="#FDE68A" font-size="14">memory handoff</text>
+    <text x="805" y="273" fill="#FDE68A" font-size="14">recovery</text>
+
+    <rect x="1012" y="184" width="170" height="100" rx="16" fill="#07101D" stroke="#34D399"/>
+    <text x="1043" y="226" fill="#F8FAFC" font-size="22" font-weight="800">Eval</text>
+    <text x="1043" y="254" fill="#BBF7D0" font-size="14">evidence + score</text>
+  </g>
+
+  <path d="M238 234H284" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M476 234H524" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M716 234H764" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M956 234H1004" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(86 378)" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="0" y="0" width="1108" height="56" rx="14" fill="#111827" stroke="#26364D"/>
+    <text x="26" y="36" fill="#CBD5E1" font-size="17">Design target:</text>
+    <text x="148" y="36" fill="#F8FAFC" font-size="17" font-weight="800">local-first, auditable, composable, recoverable, and measurable agent work</text>
+  </g>
+</svg>

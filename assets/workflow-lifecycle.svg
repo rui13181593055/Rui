@@ -1,0 +1,53 @@
+<svg width="1280" height="460" viewBox="0 0 1280 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Workflow lifecycle</title>
+  <desc id="desc">A visual lifecycle for selecting, executing, validating, and improving an agent capability.</desc>
+  <rect width="1280" height="460" rx="24" fill="#0B1220"/>
+  <text x="70" y="80" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="850">Workflow Lifecycle</text>
+  <text x="70" y="116" fill="#B8C4D6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">A repeatable loop for agent work that needs evidence, recovery, and durable reuse.</text>
+
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0 0L8 3L0 6Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <circle cx="166" cy="252" r="58" fill="#07101D" stroke="#2DD4BF" stroke-width="2"/>
+    <text x="129" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Select</text>
+    <text x="126" y="273" fill="#A7F3D0" font-size="13">registry</text>
+
+    <circle cx="326" cy="252" r="58" fill="#07101D" stroke="#60A5FA" stroke-width="2"/>
+    <text x="294" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Load</text>
+    <text x="290" y="273" fill="#BFDBFE" font-size="13">minimal context</text>
+
+    <circle cx="486" cy="252" r="58" fill="#07101D" stroke="#A78BFA" stroke-width="2"/>
+    <text x="453" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Route</text>
+    <text x="453" y="273" fill="#DDD6FE" font-size="13">tools</text>
+
+    <circle cx="646" cy="252" r="58" fill="#07101D" stroke="#F59E0B" stroke-width="2"/>
+    <text x="617" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Act</text>
+    <text x="602" y="273" fill="#FDE68A" font-size="13">smallest step</text>
+
+    <circle cx="806" cy="252" r="58" fill="#07101D" stroke="#FB7185" stroke-width="2"/>
+    <text x="775" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Recover</text>
+    <text x="769" y="273" fill="#FFE4E6" font-size="13">if needed</text>
+
+    <circle cx="966" cy="252" r="58" fill="#07101D" stroke="#34D399" stroke-width="2"/>
+    <text x="932" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Verify</text>
+    <text x="924" y="273" fill="#BBF7D0" font-size="13">evidence</text>
+
+    <circle cx="1126" cy="252" r="58" fill="#07101D" stroke="#E879F9" stroke-width="2"/>
+    <text x="1094" y="246" fill="#F8FAFC" font-size="18" font-weight="800">Improve</text>
+    <text x="1090" y="273" fill="#F5D0FE" font-size="13">generalize</text>
+  </g>
+
+  <path d="M224 252H266" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow2)"/>
+  <path d="M384 252H426" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow2)"/>
+  <path d="M544 252H586" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow2)"/>
+  <path d="M704 252H746" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow2)"/>
+  <path d="M864 252H906" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow2)"/>
+  <path d="M1024 252H1066" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow2)"/>
+
+  <path d="M1126 314C1126 376 166 376 166 314" stroke="#475569" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="521" y="402" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Reusable lessons return to the registry, template, workflow, or eval layer.</text>
+</svg>

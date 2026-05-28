@@ -1,0 +1,52 @@
+<svg width="1280" height="620" viewBox="0 0 1280 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Capability family map</title>
+  <desc id="desc">A visual map of major capability families in the workbench.</desc>
+  <rect width="1280" height="620" rx="24" fill="#08111F"/>
+  <text x="70" y="82" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="850">Capability Map</text>
+  <text x="70" y="118" fill="#B8C4D6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Operational modules grouped by the failure modes and research workflows they support.</text>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="70" y="166" width="250" height="132" rx="18" fill="#0F172A" stroke="#2DD4BF"/>
+    <text x="96" y="207" fill="#F8FAFC" font-size="22" font-weight="850">Runtime Recovery</text>
+    <text x="96" y="238" fill="#A7F3D0" font-size="15">desktop runtime</text>
+    <text x="96" y="263" fill="#A7F3D0" font-size="15">config drift</text>
+
+    <rect x="360" y="166" width="250" height="132" rx="18" fill="#0F172A" stroke="#60A5FA"/>
+    <text x="386" y="207" fill="#F8FAFC" font-size="22" font-weight="850">Interop</text>
+    <text x="386" y="238" fill="#BFDBFE" font-size="15">Windows + WSL</text>
+    <text x="386" y="263" fill="#BFDBFE" font-size="15">path resolution</text>
+
+    <rect x="650" y="166" width="250" height="132" rx="18" fill="#0F172A" stroke="#A78BFA"/>
+    <text x="676" y="207" fill="#F8FAFC" font-size="22" font-weight="850">Providers + MCP</text>
+    <text x="676" y="238" fill="#DDD6FE" font-size="15">response shape</text>
+    <text x="676" y="263" fill="#DDD6FE" font-size="15">session freshness</text>
+
+    <rect x="940" y="166" width="250" height="132" rx="18" fill="#0F172A" stroke="#F59E0B"/>
+    <text x="966" y="207" fill="#F8FAFC" font-size="22" font-weight="850">Media + Bridge</text>
+    <text x="966" y="238" fill="#FDE68A" font-size="15">artifact integrity</text>
+    <text x="966" y="263" fill="#FDE68A" font-size="15">visible delivery</text>
+
+    <rect x="70" y="338" width="250" height="132" rx="18" fill="#0F172A" stroke="#22D3EE"/>
+    <text x="96" y="379" fill="#F8FAFC" font-size="22" font-weight="850">Code Intelligence</text>
+    <text x="96" y="410" fill="#BAE6FD" font-size="15">CodeGraph</text>
+    <text x="96" y="435" fill="#BAE6FD" font-size="15">impact checks</text>
+
+    <rect x="360" y="338" width="250" height="132" rx="18" fill="#0F172A" stroke="#34D399"/>
+    <text x="386" y="379" fill="#F8FAFC" font-size="22" font-weight="850">Publication</text>
+    <text x="386" y="410" fill="#BBF7D0" font-size="15">public-safe distillation</text>
+    <text x="386" y="435" fill="#BBF7D0" font-size="15">readiness review</text>
+
+    <rect x="650" y="338" width="250" height="132" rx="18" fill="#0F172A" stroke="#FB7185"/>
+    <text x="676" y="379" fill="#F8FAFC" font-size="22" font-weight="850">Game + UI QA</text>
+    <text x="676" y="410" fill="#FFE4E6" font-size="15">canvas visibility</text>
+    <text x="676" y="435" fill="#FFE4E6" font-size="15">sprite verification</text>
+
+    <rect x="940" y="338" width="250" height="132" rx="18" fill="#0F172A" stroke="#E879F9"/>
+    <text x="966" y="379" fill="#F8FAFC" font-size="22" font-weight="850">Research Roadmap</text>
+    <text x="966" y="410" fill="#F5D0FE" font-size="15">proofs + asymptotics</text>
+    <text x="966" y="435" fill="#F5D0FE" font-size="15">LaTeX + papers</text>
+  </g>
+
+  <rect x="70" y="524" width="1120" height="54" rx="14" fill="#0F172A" stroke="#26364D"/>
+  <text x="100" y="558" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Each family is indexed by tags, tools, difficulty, status, and a public-safe summary.</text>
+</svg>
