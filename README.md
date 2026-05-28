@@ -1,135 +1,180 @@
 <div align="center">
 
-<img src="./assets/profile-banner.svg" alt="Rui Workbench banner" width="100%" />
+<img src="./assets/profile-banner.svg" alt="Rui Skills banner" width="100%" />
 
-# Rui Workbench
+# Rui Skills
 
-**Rui Skills: an open skill system for AI research and coding agents.**
+**An open skill system for AI research and coding agents.**
+
+Rui Skills turns repeated agent work into reusable, testable, composable, and installable capabilities. It is designed for coding agents that need clear triggers, tool routing, recovery plans, evaluation gates, and public-safe operational knowledge.
 
 [![Repository](https://img.shields.io/badge/repo-rui4399%2FRui-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rui4399/Rui)
-[![ResearchFlow](https://img.shields.io/badge/ResearchFlow-research%20engine-0f766e?style=for-the-badge)](https://github.com/RipeMangoBox/ResearchFlow)
-[![Anaconda](https://img.shields.io/badge/Python-Anaconda-44a833?style=for-the-badge&logo=anaconda&logoColor=white)](#stack)
-[![Codex](https://img.shields.io/badge/Codex-local%20skills-1f2937?style=for-the-badge)](#system-map)
+[![Skills](https://img.shields.io/badge/active%20skills-28-0f766e?style=for-the-badge)](./skills)
+[![Registry](https://img.shields.io/badge/registry-33%20entries-1d4ed8?style=for-the-badge)](./registry/index.json)
+[![Validation](https://img.shields.io/badge/validation-local%20smoke%20check-7c3aed?style=for-the-badge)](./docs/validation.md)
 
 </div>
 
 ---
 
-## Overview
+## Start Here
 
-Rui Workbench is evolving from a local-agent workbench into a reusable AI Agent Skill Platform. The repository keeps the practical operating-system layer that made the first skills useful, while adding the structure needed for installable skills, workflow composition, runtime loading, evaluation, and future community contribution.
-
-The target is not a prompt collection. A real Rui Skill should define intent, trigger, context, workflow, tool routing, constraints, recovery, examples, and evaluation. The long-term platform direction is especially focused on high-barrier math research, paper-writing workflows, local tooling, and evidence-based agent operations.
-
-## Highlights
-
-| Layer | What it does | Current direction |
-| --- | --- | --- |
-| ResearchFlow | Collects, indexes, audits, and queries research papers | Local knowledge base for papers and notes |
-| Skills | Turns repeated agent work into reusable procedures | Installable, testable, searchable skill modules |
-| Registry | Records skill metadata, tools, tags, status, and paths | Search, filtering, ranking, and future marketplace support |
-| Runtime | Loads skills and composes workflows | Local execution, tool routing, context handoff, and CLI integration |
-| Code intelligence | Narrows large repositories before edits | CodeGraph MCP/CLI, impact checks, and affected-test discovery |
-| Workflows | Connects multiple skills into pipelines | Math research, paper drafting, game/UI QA, and recovery flows |
-| Evals | Measures whether skills work under pressure | Correctness, token cost, latency, recovery quality, and safety |
-| Recovery runbooks | Captures Windows, WSL, media, and tooling failure modes | Practical repair paths backed by logs and checks |
-
-## Featured Work
-
-| Project | Why it matters |
+| Goal | Entry point |
 | --- | --- |
-| [Skill library](./skills) | Public agent skills for local runtime reliability, bridge recovery, provider probing, publication hygiene, and operating philosophy |
-| [Registry](./registry/index.json) | Machine-readable index for skill metadata, roadmap placeholders, tool routing, and search |
-| [Runtime notes](./runtime/README.md) | Loader, execution, composition, context, and CLI contract for the future platform |
-| [CodeGraph skill](./skills/codegraph-mcp-code-intelligence) | Local-first code intelligence for repo triage, impact analysis, and context packs |
-| [Workflow docs](./workflows/README.md) | Multi-skill orchestration patterns for math, papers, UI QA, and local recovery |
-| [Evaluation docs](./evals/README.md) | Benchmark shape and metrics for proving skills work |
-| [Validation](./docs/validation.md) | Local smoke checks for registry entries, skill frontmatter, paths, and public safety |
-| [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
+| Browse available skills | [registry/index.json](./registry/index.json) |
+| Use a skill directly | [skills/](./skills) |
+| Learn the format | [docs/skill-authoring-guide.md](./docs/skill-authoring-guide.md) |
+| Compose multiple skills | [workflows/README.md](./workflows/README.md) |
+| Validate the repository | [docs/validation.md](./docs/validation.md) |
+| Study runtime direction | [runtime/README.md](./runtime/README.md) |
+
+```bash
+node tools/validate-skills.mjs
+```
+
+Current validation target: `33` registry entries, `28` active skills, `5` roadmap skills, and `21` domains.
+
+## What This Is
+
+Rui Skills is not a prompt collection. A real skill should define:
+
+- intent and trigger
+- required context
+- workflow
+- tool routing
+- constraints
+- failure recovery
+- examples
+- evaluation criteria
+
+The repository is the seed of a broader AI Agent Skill Platform: a local-first system where skills can be indexed, installed, composed, tested, ranked, and improved.
+
+## Platform At A Glance
+
+| Layer | Role | Status |
+| --- | --- | --- |
+| Skills | Codex-compatible capability folders with `SKILL.md` | active |
+| Registry | Machine-readable metadata for search, install, and ranking | active |
+| Validation | Local smoke checks for paths, frontmatter, metadata, and safety | active |
+| Workflows | Multi-skill orchestration patterns | draft |
+| Runtime | Loader, context handoff, tool routing, and CLI contract | draft |
+| Evals | Benchmark metrics and report shape | draft |
+| Memory | Public/private context inheritance policy | draft |
+| Agents | Future subagent role definitions | draft |
+
+## Core Skill Families
+
+| Family | Examples | What they optimize |
+| --- | --- | --- |
+| Runtime recovery | `codex-desktop-runtime-maintenance`, `codex-config-drift-recovery` | fixing agent environments without damaging config |
+| Windows and interop | `windows-agent-interop-health`, `cross-runtime-path-resolution` | separating Windows, WSL, shell, and process boundaries |
+| Provider and MCP | `provider-response-shape-probing`, `mcp-oauth-session-freshness` | proving tool/provider health by usable behavior |
+| Media and bridge QA | `chat-media-delivery-runbook`, `media-artifact-integrity-check` | validating generation, upload, send, and visible delivery |
+| Code intelligence | `codegraph-mcp-code-intelligence` | symbol search, impact analysis, and affected-test discovery |
+| Publication hygiene | `public-skill-distillation`, `agent-publication-readiness-review` | turning private work into safe public skills |
+| Game and UI QA | `web-game-ui-bugfix-playbook` | reproducing and verifying browser-game visual defects |
+| Operating philosophy | `evidence-first-local-ops`, `state-layered-agent-design` | making agent work auditable and recoverable |
+
+## Featured Paths
+
+| Path | Why it matters |
+| --- | --- |
+| [skills/](./skills) | Public skills distilled from local agent operations and engineering workflows |
+| [registry/index.json](./registry/index.json) | Searchable metadata for tools, tags, difficulty, domains, and status |
+| [tools/validate-skills.mjs](./tools/validate-skills.mjs) | Dependency-free structural validator for the skill platform |
+| [templates/skill-template/SKILL.md](./templates/skill-template/SKILL.md) | Authoring template that keeps Codex frontmatter compatible |
+| [workflows/README.md](./workflows/README.md) | Pipeline examples for math, papers, game UI QA, and recovery work |
+| [evals/README.md](./evals/README.md) | Benchmark dimensions for correctness, cost, latency, safety, and recovery |
+| [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | Related research engine for paper retrieval, notes, indexes, and queries |
 
 ## System Map
 
 ```mermaid
 flowchart LR
-    A["User or agent task"] --> B["Skill registry"]
-    B --> C["Skill loader"]
+    A["Task"] --> B["Registry search"]
+    B --> C["Skill trigger"]
     C --> D["Tool routing"]
-    D --> E["Workflow execution"]
-    E --> F["Evaluation record"]
-    F --> G["Improved skill"]
+    D --> E["Workflow"]
+    E --> F["Recovery or verification"]
+    F --> G["Evaluation record"]
+    G --> H["Improved skill"]
 ```
 
-## Platform Layout
+## Repository Layout
 
 ```text
 Rui/
 ├── skills/       # installable single-skill modules
-├── registry/     # machine-readable skill index and roadmap metadata
-├── runtime/      # loader, execution, composition, and CLI contracts
+├── registry/     # machine-readable index and roadmap metadata
+├── tools/        # validators and tool-routing notes
+├── runtime/      # loader, composition, context, and CLI contracts
 ├── workflows/    # multi-skill orchestration patterns
-├── evals/        # benchmark design, metrics, and fixtures
-├── templates/    # authoring templates for new skills
-├── docs/         # getting started, schema, workflow, and evaluation docs
-├── examples/     # sample runs and future reproducible demos
+├── evals/        # benchmark design, metrics, and report formats
+├── templates/    # skill authoring templates
+├── docs/         # getting started, schema, workflow, validation, and eval docs
 ├── memory/       # context inheritance and public/private memory policy
-├── tools/        # tool-routing and bridge notes
-└── agents/       # subagent role definitions and orchestration policy
+├── examples/     # future reproducible examples
+└── agents/       # future subagent role definitions
 ```
 
-## Stack
+## Quality Gates
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=anaconda&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Zotero-CC2936?style=flat-square&logo=zotero&logoColor=white" />
-  <img src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />
-</p>
+Before a skill is considered publishable:
 
-## Principles
+1. It has a clear trigger in `description`.
+2. It keeps `SKILL.md` frontmatter Codex-compatible.
+3. It has registry metadata in `registry/index.json`.
+4. It defines workflow, constraints, recovery, examples, and evaluation.
+5. It avoids private logs, local absolute paths, credentials, and account state.
+6. It passes the local smoke validator.
 
-- Local-first by default.
-- Clear files, logs, checkpoints, and recovery paths.
-- Skill quality before skill count.
-- Runtime, workflow, and evaluation before prompt wording.
-- Machine-checkable validation before publication.
-- Research notes, code, proofs, and papers treated as one thinking system.
-- Environments kept boring, explicit, and portable.
+```bash
+node tools/validate-skills.mjs
+node tools/validate-skills.mjs --strict-sections
+```
 
 ## Roadmap
 
 | Phase | Goal | Core work |
 | --- | --- | --- |
-| Phase 1 | Standardize the platform base | Skill schema, registry, templates, docs, examples, public safety checks |
-| Phase 2 | Add runtime and CLI | Loader, workflow pipeline, tool routing, memory/context handoff, `rui` CLI contract |
-| Phase 3 | Add benchmarks and high-barrier skills | Evals, automated reports, theorem/proof/asymptotic/polynomial/LaTeX skills |
-| Phase 4 | Add agent orchestration and web surface | Subagents, multi-agent workflows, Web UI, marketplace-style discovery |
-| Phase 5 | Grow community ecosystem | Contribution templates, ranking, online benchmark reports, reusable examples |
+| Phase 1 | Standardize the platform base | Schema, registry, validation, templates, docs, safety checks |
+| Phase 2 | Add runtime and CLI | Loader, workflow pipeline, tool routing, memory handoff, `rui` CLI |
+| Phase 3 | Add benchmarks | Reports, fixtures, correctness checks, recovery scoring |
+| Phase 4 | Build high-barrier skills | theorem proving, asymptotics, polynomial analysis, LaTeX polishing, MCM papers |
+| Phase 5 | Grow ecosystem | contribution templates, ranking, Web UI, marketplace-style discovery |
 
-High-value research skill directions:
+Planned research skills:
 
-- `theorem-prover`: proof planning, lemma decomposition, and correctness checks.
-- `asymptotic-analyzer`: limits, rates, complexity, recurrence, and generating-function analysis.
-- `polynomial-engine`: modular tests, Eisenstein shifts, factorization, Galois-oriented checks.
-- `latex-polisher`: notation-preserving paper and proof cleanup.
-- `mcm-paper-writer`: modeling-paper pipeline for assumptions, methods, sensitivity analysis, and appendices.
+- `theorem-prover`
+- `asymptotic-analyzer`
+- `polynomial-engine`
+- `latex-polisher`
+- `mcm-paper-writer`
 
-## GitHub Snapshot
+## Design Principles
 
-<div align="center">
+- Local-first by default.
+- Evidence before claims.
+- Skill quality before skill count.
+- Runtime and evaluation before prompt wording.
+- Recovery paths are part of the product.
+- Public skills should distill methods, not leak private context.
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=rui4399&show_icons=true&hide_border=true&theme=default)
+## Stack
 
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rui4399&layout=compact&hide_border=true)
-
-</div>
+<p>
+  <img src="https://img.shields.io/badge/Codex-skills-111827?style=flat-square" />
+  <img src="https://img.shields.io/badge/Node.js-validation-339933?style=flat-square&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-evals-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PowerShell-Windows%20ops-5391FE?style=flat-square&logo=powershell&logoColor=white" />
+  <img src="https://img.shields.io/badge/CodeGraph-MCP-7C3AED?style=flat-square" />
+  <img src="https://img.shields.io/badge/LaTeX-writing-008080?style=flat-square&logo=latex&logoColor=white" />
+</p>
 
 ---
 
 <div align="center">
 
-**Building local agent workflows that survive real machines, real logs, and real failure modes.**
+**Reusable agent skills for real code, real tools, real failures, and measurable recovery.**
 
 </div>
