@@ -2,6 +2,16 @@
 
 Skills declare preferred tool classes in `registry/index.json`. The declaration is advisory; the agent must still inspect the active environment before using a tool.
 
+## Repository Tools
+
+- `validate-skills.mjs`: local smoke validator for registry schema, active skill paths, frontmatter, and public-safety patterns.
+
+Run it from the repository root:
+
+```bash
+node tools/validate-skills.mjs
+```
+
 ## Tool Classes
 
 - `filesystem`: local reads, edits, validation, and artifact inspection.

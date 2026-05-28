@@ -10,6 +10,7 @@ Rui Skills is an AI Agent Skill Platform, not a prompt dump. Start by choosing a
 4. Execute its workflow with the smallest useful context.
 5. Verify the observable completion criteria.
 6. Record reusable results in `evals/` or a sanitized example.
+7. Run `node tools/validate-skills.mjs` before publishing changes.
 
 For large codebases, use `codegraph-mcp-code-intelligence` before broad reading. It can build symbol, impact, and task-context views locally, but every edit still needs direct source inspection and normal validation.
 

@@ -44,6 +44,7 @@ The target is not a prompt collection. A real Rui Skill should define intent, tr
 | [CodeGraph skill](./skills/codegraph-mcp-code-intelligence) | Local-first code intelligence for repo triage, impact analysis, and context packs |
 | [Workflow docs](./workflows/README.md) | Multi-skill orchestration patterns for math, papers, UI QA, and local recovery |
 | [Evaluation docs](./evals/README.md) | Benchmark shape and metrics for proving skills work |
+| [Validation](./docs/validation.md) | Local smoke checks for registry entries, skill frontmatter, paths, and public safety |
 | [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
 
 ## System Map
@@ -93,6 +94,7 @@ Rui/
 - Clear files, logs, checkpoints, and recovery paths.
 - Skill quality before skill count.
 - Runtime, workflow, and evaluation before prompt wording.
+- Machine-checkable validation before publication.
 - Research notes, code, proofs, and papers treated as one thinking system.
 - Environments kept boring, explicit, and portable.
 

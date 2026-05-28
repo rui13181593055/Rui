@@ -52,6 +52,18 @@ Every high-quality skill should include:
 
 Prefer one strong skill over five shallow skills. A skill is not ready if it lacks a trigger, has no verification gate, depends on private paths, or only restates generic advice.
 
+## Validation
+
+Run the local smoke validator before publishing:
+
+```bash
+node tools/validate-skills.mjs
+```
+
+Treat errors as release blockers. Treat warnings as quality debt unless the skill is intentionally minimal or a roadmap placeholder.
+
+Use `node tools/validate-skills.mjs --strict-sections` when upgrading older skills toward the full section standard.
+
 ## Public Safety
 
 Do not publish secrets, tokens, cookies, recipient IDs, private logs, private chat context, machine-specific absolute paths, or proprietary code. Distill methods and checks, not raw incidents.

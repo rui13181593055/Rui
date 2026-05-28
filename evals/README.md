@@ -35,3 +35,15 @@ evals/
 ## Report Format
 
 Use JSON or JSONL reports so results can later feed a web UI, ranking page, or CI summary.
+
+## Baseline Repository Eval
+
+The first benchmark is structural: the repository should pass the local smoke validator before any skill is considered publishable.
+
+```bash
+node tools/validate-skills.mjs
+```
+
+This does not prove skill quality, but it catches broken registry entries, missing active skills, incompatible frontmatter, and obvious public-safety leaks.
+
+Use `node tools/validate-skills.mjs --strict-sections` to measure migration progress toward the full skill body schema.

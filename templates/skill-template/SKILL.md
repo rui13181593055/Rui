@@ -31,6 +31,7 @@ State the reusable capability in one or two sentences.
 - `browser`: inspect local web targets and visual state.
 - `latex`: compile or validate mathematical documents.
 - `github`: use only for scoped repository operations with appropriate authorization.
+- `mcp`: use only when the skill depends on a configured external server and the current session has fresh auth.
 
 ## Constraints
 
@@ -38,6 +39,7 @@ State the reusable capability in one or two sentences.
 - Keep `SKILL.md` frontmatter validator-compatible.
 - Put extended metadata in `registry/index.json`.
 - Do not expand beyond the trigger.
+- Do not create private-path examples or leak raw logs into public skills.
 
 ## Failure Recovery
 
