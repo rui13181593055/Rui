@@ -41,6 +41,12 @@ The collection is intentionally not a catalog of generic API wrappers. Each skil
 - `codex-identity-portability`: migrate local Codex identity assets without copying secrets or active account state.
 - `public-skill-distillation`: turn private logs, maintenance records, and agent conversations into public, reusable, sanitized skills.
 - `agent-publication-readiness-review`: review a public GitHub skill library for taxonomy, polish, validation, and sensitive-information exposure.
+- `token-frugal-skill-authoring`: create and revise Codex-compatible skills with compact triggers, progressive disclosure, validation, and low default context cost.
+
+### Authoring, Decisions, And Agent QA
+
+- `decision-record-architecture`: maintain lightweight decision records with rationale, options, status, indexes, and supersession chains.
+- `agent-efficiency-audit`: audit agent workflows, skills, prompts, and docs for token cost, speed risk, compatibility risk, and validation gaps.
 
 ### Web, Game, And Visual QA
 

@@ -1,6 +1,6 @@
 # Evaluation Guide
 
-Rui Skills should be evaluated as executable agent capabilities. Static prose quality is not enough.
+Rui Workbench should be evaluated as executable agent capabilities. Static prose quality is not enough.
 
 ## Core Metrics
 

@@ -1,6 +1,6 @@
 # Runtime
 
-The runtime layer is the future execution surface for Rui Skills. It should load skill metadata, route tools, compose workflows, preserve compact context, and emit evaluation records.
+The runtime layer is the future execution surface for Rui Workbench. It should load skill metadata, route tools, compose workflows, preserve compact context, and emit evaluation records.
 
 ## Target API
 

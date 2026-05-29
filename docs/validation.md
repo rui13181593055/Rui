@@ -1,6 +1,6 @@
 # Validation
 
-Rui Skills should be checked locally before publishing or promotion.
+Rui Workbench should be checked locally before publishing or promotion.
 
 ## Smoke Check
 

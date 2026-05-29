@@ -1,6 +1,6 @@
 # Getting Started
 
-Rui Skills is an AI Agent Skill Platform, not a prompt dump. Start by choosing a skill from the registry, reading the corresponding `SKILL.md`, running the workflow with the required tools, and recording evaluation evidence.
+Rui Workbench is an AI Agent Skill Platform, not a prompt dump. Start by choosing a skill from the registry, reading the corresponding `SKILL.md`, running the workflow with the required tools, and recording evaluation evidence.
 
 ## Five-Minute Path
 

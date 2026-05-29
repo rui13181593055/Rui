@@ -1,0 +1,73 @@
+<svg width="1280" height="520" viewBox="0 0 1280 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Quality gate pipeline</title>
+  <desc id="desc">A visual pipeline showing how local evidence becomes a public, validated agent capability.</desc>
+  <rect width="1280" height="520" rx="24" fill="#07111F"/>
+  <path d="M0 388C114 348 234 340 364 362C494 384 604 423 731 370C858 317 918 248 1049 247C1136 247 1207 277 1280 264V520H0V388Z" fill="#102030"/>
+  <path d="M74 132H1198" stroke="#233247"/>
+  <path d="M74 308H1198" stroke="#233247"/>
+  <path d="M126 76V444" stroke="#233247"/>
+  <path d="M318 76V444" stroke="#233247"/>
+  <path d="M510 76V444" stroke="#233247"/>
+  <path d="M702 76V444" stroke="#233247"/>
+  <path d="M894 76V444" stroke="#233247"/>
+  <path d="M1086 76V444" stroke="#233247"/>
+
+  <text x="70" y="72" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="850">Quality Gate Pipeline</text>
+  <text x="70" y="108" fill="#B8C4D6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">From local work records to compact, public-safe, testable agent capabilities.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <g transform="translate(70 172)">
+      <rect width="150" height="112" rx="16" fill="#0F172A" stroke="#22D3EE"/>
+      <circle cx="28" cy="30" r="11" fill="#22D3EE"/>
+      <text x="52" y="37" fill="#F8FAFC" font-size="19" font-weight="850">Distill</text>
+      <text x="24" y="70" fill="#BAE6FD" font-size="14">recurring work</text>
+      <text x="24" y="94" fill="#BAE6FD" font-size="14">public pattern</text>
+    </g>
+    <path d="M232 228H302" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(314 172)">
+      <rect width="150" height="112" rx="16" fill="#0F172A" stroke="#34D399"/>
+      <circle cx="28" cy="30" r="11" fill="#34D399"/>
+      <text x="52" y="37" fill="#F8FAFC" font-size="19" font-weight="850">Author</text>
+      <text x="24" y="70" fill="#BBF7D0" font-size="14">trigger first</text>
+      <text x="24" y="94" fill="#BBF7D0" font-size="14">low context</text>
+    </g>
+    <path d="M476 228H546" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(558 172)">
+      <rect width="150" height="112" rx="16" fill="#0F172A" stroke="#60A5FA"/>
+      <circle cx="28" cy="30" r="11" fill="#60A5FA"/>
+      <text x="52" y="37" fill="#F8FAFC" font-size="19" font-weight="850">Register</text>
+      <text x="24" y="70" fill="#BFDBFE" font-size="14">tools + tags</text>
+      <text x="24" y="94" fill="#BFDBFE" font-size="14">domain index</text>
+    </g>
+    <path d="M720 228H790" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(802 172)">
+      <rect width="150" height="112" rx="16" fill="#0F172A" stroke="#C084FC"/>
+      <circle cx="28" cy="30" r="11" fill="#C084FC"/>
+      <text x="52" y="37" fill="#F8FAFC" font-size="19" font-weight="850">Validate</text>
+      <text x="24" y="70" fill="#E9D5FF" font-size="14">frontmatter</text>
+      <text x="24" y="94" fill="#E9D5FF" font-size="14">strict sections</text>
+    </g>
+    <path d="M964 228H1034" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(1046 172)">
+      <rect width="150" height="112" rx="16" fill="#0F172A" stroke="#F59E0B"/>
+      <circle cx="28" cy="30" r="11" fill="#F59E0B"/>
+      <text x="52" y="37" fill="#F8FAFC" font-size="19" font-weight="850">Publish</text>
+      <text x="24" y="70" fill="#FDE68A" font-size="14">sanitized diff</text>
+      <text x="24" y="94" fill="#FDE68A" font-size="14">verified push</text>
+    </g>
+
+    <rect x="184" y="348" width="912" height="72" rx="18" fill="#0B1626" stroke="#26364D"/>
+    <text x="218" y="378" fill="#E2E8F0" font-size="18" font-weight="800">Newly added capability families</text>
+    <text x="218" y="406" fill="#CBD5E1" font-size="16">token-frugal skill authoring  |  decision-record architecture  |  agent efficiency audit</text>
+  </g>
+</svg>

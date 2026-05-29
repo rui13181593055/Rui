@@ -1,6 +1,6 @@
 # Memory Strategy
 
-Rui Skills can inherit context, but public skills must remain portable and safe.
+Rui Workbench can inherit context, but public skills must remain portable and safe.
 
 ## Memory Layers
 

@@ -1,6 +1,6 @@
 # Documentation
 
-This directory explains the platform layer around Rui Skills.
+This directory explains the platform layer around Rui Workbench.
 
 - `getting-started.md`: fastest path from registry entry to skill execution.
 - `skill-authoring-guide.md`: authoring rules, frontmatter compatibility, and quality bar.

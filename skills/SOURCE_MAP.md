@@ -192,6 +192,50 @@ Distinctive angle:
 - gives each layer a distinct repair and migration policy
 - prevents common overbroad fixes such as deleting auth for a log corruption
 
+## token-frugal-skill-authoring
+
+Inspired by:
+
+- repeated local skill authoring and refinement work
+- validator compatibility requirements for Codex-style `SKILL.md` files
+- progressive disclosure patterns that keep default context small
+- public-safety passes that separate reusable workflows from private logs
+
+Distinctive angle:
+
+- treats trigger text as the first execution surface
+- keeps frontmatter strict while placing richer metadata in the registry
+- turns broad philosophies into compact, testable agent workflows
+
+## decision-record-architecture
+
+Inspired by:
+
+- lightweight decision logging used during local agent and repository maintenance
+- repeated need to preserve rationale after chat context becomes stale
+- architecture notes where supersession matters more than raw transcript history
+
+Distinctive angle:
+
+- records one decision per file with status, options, rationale, and expected outcome
+- rebuilds an index from records instead of trusting a manually maintained list
+- makes supersession explicit so old decisions remain auditable without staying active
+
+## agent-efficiency-audit
+
+Inspired by:
+
+- local audits of skills, prompts, and workflow instructions for token cost
+- repeated over-reading and validation-gap issues in agent work
+- CodeGraph-backed narrowing before broad source inspection
+- improvement loops that require measured evidence rather than efficiency claims
+
+Distinctive angle:
+
+- classifies context, trigger, compatibility, speed, and verification risks separately
+- requires a baseline or structural metric before claiming improvement
+- optimizes agent workflows without removing safety or recovery checks
+
 ## failure-to-runbook-loop
 
 Inspired by:

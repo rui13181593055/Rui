@@ -1,6 +1,6 @@
 # Evals
 
-This directory defines benchmark design for Rui Skills. A skill is not considered strong just because its prose is polished; it should survive realistic pressure scenarios.
+This directory defines benchmark design for Rui Workbench. A skill is not considered strong just because its prose is polished; it should survive realistic pressure scenarios.
 
 ## Directory Pattern
 
